@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+  --hb-verde:        #5a9c4a;  
+  --hb-verde-oscuro:  #3d7336; 
+  --hb-verde-suave:   #eaf3e6;  
+  --hb-azul:          #2c5a80;  
+  --hb-azul-oscuro:   #1c3c57;  
+  --hb-crema:         #fbf9f5;
+  --hb-ink:           #1e2822;
+  --hb-mute:          #6b7268;
+  --hb-linea:         #e5e4dc;
+
+  --bs-font-sans-serif: 'Inter', system-ui, sans-serif;
+}
+
+body{ color: var(--hb-ink); background: #fff; }
+h1, h2, h3, h4, .navbar-brand, .fw-brand{
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.btn-primary{
+  background-color: var(--hb-verde);
+  border-color: var(--hb-verde);
+  font-weight: 600;
+}
+.btn-primary:hover, .btn-primary:focus{
+  background-color: var(--hb-verde-oscuro);
+  border-color: var(--hb-verde-oscuro);
+}
+.btn-outline-primary{
+  color: var(--hb-verde-oscuro);
+  border-color: var(--hb-verde);
+}
+.btn-outline-primary:hover{
+  background-color: var(--hb-verde);
+  border-color: var(--hb-verde);
+  color: #fff;
+}
+.btn{ border-radius: 50rem; padding: .65rem 1.6rem; }
+.btn-sm{ padding: .35rem .9rem; }
+
+.text-verde{ color: var(--hb-verde-oscuro) !important; }
+.text-azul{ color: var(--hb-azul-oscuro) !important; }
+.bg-verde-suave{ background-color: var(--hb-verde-suave) !important; }
+.bg-crema{ background-color: var(--hb-crema) !important; }
+.bg-azul-oscuro{ background-color: var(--hb-azul-oscuro) !important; }
+.link-azul{ color: var(--hb-azul-oscuro); }
+
+.navbar{ background: #fff; border-bottom: 1px solid var(--hb-linea); }
+.navbar-brand{ color: var(--hb-azul-oscuro); display: flex; align-items: center; gap: .55rem; font-size: 1.15rem; }
+.navbar-brand img{ height: 34px; width: auto; }
+.nav-link{ color: var(--hb-mute); font-weight: 500; }
+.nav-link.active{
+  color: var(--hb-azul-oscuro) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--hb-verde);
+}
+.icono-usuario{ color: var(--hb-azul-oscuro); }
+.badge-carrito{ background: var(--hb-verde) !important; }
+
+.hero-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: var(--hb-verde-suave);
+  color: var(--hb-verde-oscuro);
+  border: 1px solid var(--hb-verde);
+  border-radius: 50rem;
+  padding: .3rem 1rem;
+  font-size: .8rem;
+  font-weight: 600;
+}
+.hero-img{ border-radius: 1rem; object-fit: cover; width: 100%; height: 100%; min-height: 320px; }
+
+.ola-marca{ display: block; width: 100%; height: 48px; line-height: 0; }
+.ola-marca path.ola-verde{ fill: var(--hb-verde); }
+.ola-marca path.ola-azul{ fill: var(--hb-azul); opacity: .85; }
+
+.card-producto{ border: 1px solid var(--hb-linea); border-radius: .9rem; overflow: hidden; }
+.card-producto .card-img-top{ aspect-ratio: 1 / 1; object-fit: contain; background: #fff; padding: .75rem; }
+.card-producto .marca-producto{ font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--hb-verde-oscuro); font-weight: 700; }
+.card-producto .precio{ font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--hb-verde-oscuro); }
+
+.icono-circulo{
+  width: 42px; height: 42px;
+  border-radius: .6rem;
+  background: var(--hb-verde-suave);
+  border: 1.5px solid var(--hb-verde);
+  color: var(--hb-verde-oscuro);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+
+.franja-azul{ background: var(--hb-azul-oscuro); color: #fff; padding: 3.5rem 0 6rem; }
+.franja-azul p{ color: rgba(255,255,255,.85); }
+.mision-card{ margin-top: -4.5rem; position: relative; z-index: 2; box-shadow: 0 12px 30px rgba(28,60,87,.14); border-radius: 1rem; }
+
+.caja-suscripcion{
+  background: var(--hb-verde-suave);
+  border: 1.5px dashed var(--hb-verde);
+  border-radius: 1.1rem;
+}
+
+
+.card-producto .btn{ position: relative; z-index: 2; }
+
+.tabla-nutri th, .tabla-nutri td{ border-color: var(--hb-linea); padding: .45rem .25rem; }
+.sello-adv{
+  display: inline-block; margin: 0 .5rem .5rem 0;
+  background: #1e2822; color: #fff; border-radius: .4rem;
+  padding: .45rem .8rem; font-size: .75rem; font-weight: 700;
+  letter-spacing: .03em; text-transform: uppercase;
+}
+
+.marco-creadores{
+  max-width: 460px; margin: 0 auto 14px;
+  background: var(--hb-verde-suave);
+  border: 2px solid var(--hb-verde);
+  border-radius: 1.5rem; padding: 1rem;
+  box-shadow: 14px 14px 0 var(--hb-azul);
+}
+.marco-creadores img{
+  display: block; width: 100%; height: auto; max-height: 540px;
+  object-fit: contain; background: #fff; border-radius: 1rem;
+}
+
+footer.pie-azul{ background: var(--hb-azul-oscuro); color: rgba(255,255,255,.9); }
+footer.pie-azul a{ color: rgba(255,255,255,.85); }
+footer.pie-azul a:hover{ color: #fff; }
+footer.pie-azul h6{ color: rgba(255,255,255,.6); letter-spacing: .08em; font-size: .75rem; }
+footer.pie-azul .redes a{
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,.45);
+  display: inline-flex; align-items:center; justify-content:center;
+}
+
+.boton-flotante{
+  position: fixed; right: 20px; width: 50px; height: 50px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; box-shadow: 0 6px 16px rgba(0,0,0,.18); z-index: 1040;
+}
+.boton-flotante--wa{ bottom: 84px; background: #25d366; }
+.boton-flotante--arriba{ bottom: 22px; background: var(--hb-azul-oscuro); }
+
+.stat-nutricional{ background: var(--hb-crema); border: 1px solid var(--hb-linea); border-radius: .7rem; text-align: center; padding: .8rem; }
+.stat-nutricional b{ font-family:'Poppins',sans-serif; font-size: 1.25rem; color: var(--hb-verde-oscuro); display:block; }
+.stat-nutricional span{ font-size: .75rem; color: var(--hb-mute); }
+.precio-grande{ font-family:'Poppins',sans-serif; font-weight:700; color: var(--hb-verde-oscuro); font-size:1.7rem; }
+
+
+.navbar{ border-top: 5px solid transparent; border-image: linear-gradient(90deg, var(--hb-verde), var(--hb-azul)) 1; border-bottom: 1px solid var(--hb-linea); }
+
+.bg-crema{ background: linear-gradient(180deg, #eef6ea 0%, #f6faf3 100%) !important; }
+
+.hero-color{ background: linear-gradient(135deg, var(--hb-verde-suave) 0%, #ffffff 55%, #e6eef5 100%); }
+.hero-img{ box-shadow: 14px 14px 0 var(--hb-verde); }
+
+main h2:not(.h5)::after{
+  content: ""; display: block; width: 60px; height: 4px; border-radius: 4px; margin-top: .55rem;
+  background: linear-gradient(90deg, var(--hb-verde), var(--hb-azul));
+}
+main .text-center h2:not(.h5)::after{ margin-left: auto; margin-right: auto; }
+main h2:not(.h5){ color: var(--hb-azul-oscuro); }
+
+.card-producto{ border-top: 4px solid var(--hb-verde); background: linear-gradient(#fff 55%, var(--hb-verde-suave) 100%); }
+.card-producto .precio{
+  display: inline-block; background: var(--hb-verde-suave); border: 1px solid var(--hb-verde);
+  border-radius: 50rem; padding: .1rem .75rem; min-width: 3rem; text-align: center;
+}
+
+.franja-azul{ background: linear-gradient(135deg, var(--hb-azul-oscuro) 0%, var(--hb-azul) 100%); }
+.mision-card{ border-top: 5px solid var(--hb-verde); }
+
+.stat-nutricional{ background: var(--hb-verde-suave); border-color: var(--hb-verde); }
+.detalle-prod .card.shadow-sm{ border-top: 4px solid var(--hb-azul) !important; }
+.tabla-nutri th{ color: var(--hb-azul-oscuro); }
+.precio-grande{ background: var(--hb-verde-suave); border-left: 5px solid var(--hb-verde); padding: .3rem 1rem; display: inline-block; border-radius: .4rem; }
+.badge.bg-verde-suave{ background-color: var(--hb-verde-suave) !important; }
+
+footer.pie-azul{ border-top: 6px solid var(--hb-verde); }
+
+.mapa-contacto{ border: 3px solid var(--hb-verde); border-radius: 1.2rem; overflow: hidden; box-shadow: 10px 10px 0 var(--hb-azul); }
+.mapa-contacto iframe{ display: block; }
+
+.lista-filtros{ background: var(--hb-verde-suave); border-radius: .9rem; padding: .5rem; }
+.lista-filtros .list-group-item{ background: transparent; border: 0; border-radius: .6rem !important; display: flex; justify-content: space-between; }
+.lista-filtros .list-group-item.active{ background: #fff; color: var(--hb-azul-oscuro); font-weight: 700; }
+.lista-filtros .list-group-item span{ color: var(--hb-mute); }

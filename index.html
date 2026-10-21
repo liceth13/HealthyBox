@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Box | Snacks saludables para cada momento</title>
+  <meta name="description" content="Healthy Box: snacks saludables, naturales y sin azúcar añadida. Descubre nuestro catálogo de productos y conoce la marca.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header class="navbar navbar-expand-lg sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo-icono.png" alt="Logo Healthy Box">
+        HEALTHY BOX
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse d-lg-flex justify-content-between align-items-center" id="navbarPrincipal">
+        <ul class="navbar-nav mx-lg-auto my-3 my-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="detalle.html">Detalles</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="icono-usuario" aria-label="Buscar"><i class="bi bi-search fs-5"></i></a>
+          <a href="#" class="icono-usuario" aria-label="Mi cuenta"><i class="bi bi-person fs-5"></i></a>
+          <a href="#" class="position-relative icono-usuario" aria-label="Carrito de compras (simulado, aún sin funcionalidad real)">
+            <i class="bi bi-cart3 fs-5"></i>
+            <span class="badge-carrito badge rounded-pill position-absolute top-0 start-100 translate-middle">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5 hero-color">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="hero-badge mb-3"><i class="bi bi-patch-check-fill"></i> 100% Saludable, Consciente &amp; Delicioso</span>
+            <h1 class="display-5 mb-3">Snacks saludables para cada momento</h1>
+            <p class="text-muted mb-4">Seleccionamos cuidadosamente las mejores marcas locales e internacionales para que disfrutes de la comida consciente sin renunciar al sabor.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="productos.html" class="btn btn-primary btn-lg">Ver Productos</a>
+              <a href="nosotros.html" class="btn btn-outline-primary btn-lg">Conócenos</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/hero-caja.jpg" alt="Caja Healthy Box con variedad de snacks saludables" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="ola-marca" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true">
+      <path class="ola-verde" d="M0,20 C240,0 480,38 720,22 C960,8 1200,40 1440,18 L1440,48 L0,48 Z"/>
+      <path class="ola-azul" d="M0,30 C240,12 480,46 720,32 C960,18 1200,46 1440,28 L1440,48 L0,48 Z"/>
+    </svg>
+
+    <section class="py-5 bg-crema">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+          <div>
+            <h2>Productos Destacados</h2>
+            <p class="text-muted mb-0">Nuestros clientes aman estos snacks por su calidad y sabor incomparable.</p>
+          </div>
+          <a href="productos.html" class="fw-semibold text-verde text-decoration-underline">Ver Todo el Catálogo →</a>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card card-producto h-100">
+              <img src="img/paranice-avena-hojuelas.jpg" class="card-img-top" alt="Avena en Hojuelas Paranice">
+              <div class="card-body d-flex flex-column">
+                <span class="marca-producto">Paranice</span>
+                <h3 class="h6">Avena en Hojuelas</h3>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                  <span class="precio">-</span>
+                  <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-producto h-100">
+              <img src="img/selectum-cereal-quinua-chocolate.jpg" class="card-img-top" alt="Cereal de Quinua Selectum">
+              <div class="card-body d-flex flex-column">
+                <span class="marca-producto">Selectum</span>
+                <h3 class="h6">Cereal de Quinua con Amaranto y Mijo</h3>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                  <span class="precio">-</span>
+                  <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-producto h-100">
+              <img src="img/monterojo-papas-lima-limon.jpg" class="card-img-top" alt="Papas Lima-Limón Monterojo">
+              <div class="card-body d-flex flex-column">
+                <span class="marca-producto">Monterojo</span>
+                <h3 class="h6">Papas Lima-Limón</h3>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                  <span class="precio">-</span>
+                  <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-producto h-100">
+              <img src="img/date-syrup-natural.jpg" class="card-img-top" alt="Date Syrup Natural Al Barakah Dates">
+              <div class="card-body d-flex flex-column">
+                <span class="marca-producto">Al Barakah Dates</span>
+                <h3 class="h6">Date Syrup Natural</h3>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                  <span class="precio">-</span>
+                  <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <h2>¿Por qué elegirnos?</h2>
+            <p class="text-muted">No somos solo una tienda, somos un filtro de bienestar. Nos aseguramos de que cada marca cumpla con los estándares nutricionales que tú y tu familia merecen.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="border rounded-4 p-4 h-100 bg-crema">
+                  <div class="icono-circulo mb-3">
+                    <i class="bi bi-leaf-fill fs-5"></i>
+                  </div>
+                  <h3 class="h6">100% Natural</h3>
+                  <p class="text-muted small mb-0">Sin preservantes artificiales ni aditivos nocivos.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="border rounded-4 p-4 h-100 bg-crema">
+                  <div class="icono-circulo mb-3">
+                    <i class="bi bi-x-circle-fill fs-5"></i>
+                  </div>
+                  <h3 class="h6">Sin Azúcar Añadida</h3>
+                  <p class="text-muted small mb-0">Dulzura honesta de fuentes naturales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-crema">
+      <div class="container">
+        <div class="caja-suscripcion p-4 p-lg-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="hero-badge mb-3"><i class="bi bi-gift-fill"></i> 100% gratis</span>
+              <h2>Suscríbete gratis a Healthy Box</h2>
+              <p class="text-muted">Únete a nuestra comunidad y sé el primero en enterarte de lo nuevo en snacks saludables. Sin costo y sin compromiso.</p>
+              <ul class="list-unstyled d-grid gap-2">
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-verde flex-shrink-0 mt-1"></i> Ofertas y descuentos exclusivos para suscriptores</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-verde flex-shrink-0 mt-1"></i> Aviso de nuevos productos y marcas aliadas</li>
+                <li class="d-flex gap-2"><i class="bi bi-check-circle-fill text-verde flex-shrink-0 mt-1"></i> Recetas y tips de bienestar en tu correo</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <form class="card p-4 shadow-sm border-0">
+                <h3 class="h5 mb-3">Recibe las novedades en tu correo</h3>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Nombre</label>
+                  <input type="text" class="form-control" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Correo electrónico</label>
+                  <input type="email" class="form-control" placeholder="tucorreo@ejemplo.com">
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="aceptoNovedades">
+                  <label class="form-check-label small text-muted" for="aceptoNovedades">Acepto recibir novedades y ofertas de Healthy Box</label>
+                </div>
+                <button type="button" class="btn btn-primary w-100">Suscribirme gratis</button>
+                <p class="text-muted small text-center mt-3 mb-0">Es gratis y puedes darte de baja cuando quieras.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-azul pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <img src="img/logo-icono.png" alt="Healthy Box" height="40" class="mb-3">
+          <p class="small">Curamos y seleccionamos los mejores snacks saludables de las marcas más conscientes del mercado. Sabor y bienestar en una sola caja.</p>
+          <div class="redes d-flex gap-2">
+            <a href="#" aria-label="Instagram @healthybox_sahagun"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" aria-label="Chat / WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>ENLACES</h6>
+          <ul class="list-unstyled d-grid gap-2 small">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="detalle.html">Detalles</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h6>CONTACTO</h6>
+          <ul class="list-unstyled d-grid gap-2 small">
+            <li><i class="bi bi-geo-alt-fill me-1"></i> Cr 9 #17 Sahagún, Córdoba, Colombia</li>
+            <li><i class="bi bi-telephone-fill me-1"></i> +57 301 488 2810</li>
+            <li><i class="bi bi-envelope-fill me-1"></i> boxhealthy821@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 small border-top border-light border-opacity-25 mt-4 pt-3">
+        <span>© 2026 Healthy Box. Todos los derechos reservados.</span>
+        <span>Desarrollado con amor por el bienestar <i class="bi bi-flower1"></i></span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="boton-flotante boton-flotante--wa" aria-label="Escríbenos por WhatsApp">
+    <i class="bi bi-whatsapp fs-4"></i>
+  </a>
+  <a href="#" class="boton-flotante boton-flotante--arriba" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up fs-5"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Healthy Box</title>
+  <meta name="description" content="Catálogo de snacks saludables de Healthy Box: chips, barras, galletas, gomitas, brownies y despensa saludable.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header class="navbar navbar-expand-lg sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo-icono.png" alt="Logo Healthy Box">
+        HEALTHY BOX
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-lg-flex justify-content-between align-items-center" id="navbarPrincipal">
+        <ul class="navbar-nav mx-lg-auto my-3 my-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="detalle.html">Detalles</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="icono-usuario" aria-label="Buscar"><i class="bi bi-search fs-5"></i></a>
+          <a href="#" class="icono-usuario" aria-label="Mi cuenta"><i class="bi bi-person fs-5"></i></a>
+          <a href="#" class="position-relative icono-usuario" aria-label="Carrito de compras (simulado, aún sin funcionalidad real)">
+            <i class="bi bi-cart3 fs-5"></i>
+            <span class="badge-carrito badge rounded-pill position-absolute top-0 start-100 translate-middle">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <aside class="col-lg-3">
+          <div class="border rounded-4 p-3 lista-filtros">
+            <h3 class="h6 px-2 mb-2">Categorías</h3>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item active">Todos los Snacks <span>38</span></div>
+              <div class="list-group-item">Chips &amp; Besquitas <span>7</span></div>
+              <div class="list-group-item">Galletas y Biscuits <span>8</span></div>
+              <div class="list-group-item">Gomitas &amp; Gelatinas <span>1</span></div>
+              <div class="list-group-item">Barras &amp; Caramelos <span>2</span></div>
+              <div class="list-group-item">Brownies &amp; Tortas <span>4</span></div>
+            </div>
+            <hr>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item">Pan Saludable <span>4</span></div>
+              <div class="list-group-item">Despensa <span>10</span></div>
+              <div class="list-group-item">Dátiles &amp; Frutos Secos <span>1</span></div>
+              <div class="list-group-item">Siropes &amp; Endulzantes <span>1</span></div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="col-lg-9">
+          <h1 class="h2 mb-4">Nuestros Productos</h1>
+
+          <div class="row row-cols-2 row-cols-md-3 g-4" id="grid-productos">
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/quinoaclub-puffs.jpg" class="card-img-top" alt="Snack de Maíz, Quinua y Chía QuinoaClub">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">QuinoaClub</span>
+                  <h3 class="h6">Snack de Maíz, Quinua y Chía</h3>
+                  <span class="text-muted small">12g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/monterojo-papas-lima-limon.jpg" class="card-img-top" alt="Papas Lima-Limón Monterojo Gourmet">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Monterojo Gourmet</span>
+                  <h3 class="h6">Papas Lima-Limón</h3>
+                  <span class="text-muted small">115g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/vitad-galletas-vainilla.jpg" class="card-img-top" alt="Galletas de Vainilla Sin Culpa Vitad">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Vitad</span>
+                  <h3 class="h6">Galletas de Vainilla Sin Culpa</h3>
+                  <span class="text-muted small">4 x 30g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-galletas-arroz.jpg" class="card-img-top" alt="Galletas de Harina de Arroz Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Galletas de Harina de Arroz</h3>
+                  <span class="text-muted small">70g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/gomitas-naranja.jpg" class="card-img-top" alt="Gomas de Gelatina sabor Naranja Purpose Brands">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Purpose Brands</span>
+                  <h3 class="h6">Gomas de Gelatina sabor Naranja</h3>
+                  <span class="text-muted small">30g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/fitbell-golden-bites.jpg" class="card-img-top" alt="Golden Bites rellenos de Arequipe FitBell">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">FitBell</span>
+                  <h3 class="h6">Golden Bites rellenos de Arequipe</h3>
+                  <span class="text-muted small">60g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/sorbetto-torta-marmolada.jpg" class="card-img-top" alt="Torta Integral Marmolada Sorbetto">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6">Torta Integral Marmolada</h3>
+                  <span class="text-muted small">100g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/torta-redonda-caramelo.jpg" class="card-img-top" alt="Torta de Chocolate Sorbetto">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6">Torta de Chocolate</h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/fitbell-brownie-crunch.jpg" class="card-img-top" alt="Brownie Crunch FitBell">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">FitBell</span>
+                  <h3 class="h6">Brownie Crunch</h3>
+                  <span class="text-muted small">150g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/purpose-mezcla-pancakes.jpg" class="card-img-top" alt="Mezcla para Pancakes y Waffles Purpose Brands">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Purpose Brands</span>
+                  <h3 class="h6">Mezcla para Pancakes &amp; Waffles</h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-pancakes-waffles-x3.jpg" class="card-img-top" alt="Pancakes y Waffles a base de Avena Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6">Pancakes &amp; Waffles a base de Avena</h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-avena-hojuelas.jpg" class="card-img-top" alt="Avena en Hojuelas Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6">Avena en Hojuelas</h3>
+                  <span class="text-muted small">1kg</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-harina-avena.jpg" class="card-img-top" alt="Harina de Avena Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6">Harina de Avena</h3>
+                  <span class="text-muted small">1kg</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-granola-chocolate.jpg" class="card-img-top" alt="GranOla Chocolate Chip Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6">GranOla Chocolate Chip</h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/selectum-cereal-quinua-chocolate.jpg" class="card-img-top" alt="Cereal de Quinua con Amaranto y Mijo sabor Chocolate Selectum">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Selectum</span>
+                  <h3 class="h6">Cereal de Quinua con Amaranto y Mijo - Chocolate</h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/selectum-cereal-quinua-miel-arandanos.jpg" class="card-img-top" alt="Cereal de Quinua con Amaranto y Mijo sabor Miel y Arándanos Selectum">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Selectum</span>
+                  <h3 class="h6">Cereal de Quinua con Amaranto y Mijo - Miel y Arándanos</h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/date-syrup-natural.jpg" class="card-img-top" alt="Date Syrup Natural Al Barakah Dates">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Al Barakah Dates</span>
+                  <h3 class="h6">Date Syrup Natural</h3>
+                  <span class="text-muted small">250g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/walla-habibi-dates.jpg" class="card-img-top" alt="Dátil Deglet Nour Sin Semilla Yalla Habibi">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Yalla Habibi</span>
+                  <h3 class="h6">Dátil Deglet Nour Sin Semilla</h3>
+                  <span class="text-muted small">200g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/monterojo-papas-bbq-dulce.jpg" class="card-img-top" alt="Papas BBQ Dulce Monterojo Gourmet">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Monterojo Gourmet</span>
+                  <h3 class="h6">Papas BBQ Dulce</h3>
+                  <span class="text-muted small">115g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/vitad-platanos-maduros.jpg" class="card-img-top" alt="Plátanos Maduros Sin Culpa Vitad">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Vitad</span>
+                  <h3 class="h6">Plátanos Maduros Sin Culpa</h3>
+                  <span class="text-muted small">21g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/uau-ditos-queso-cheddar.jpg" class="card-img-top" alt="Ditos Horneados de Maíz sabor Queso Cheddar UAU!">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">UAU!</span>
+                  <h3 class="h6">Ditos Horneados de Maíz sabor Queso Cheddar</h3>
+                  <span class="text-muted small">10g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/alcaguete-mini-pandeyucas.jpg" class="card-img-top" alt="Mini Pandeyucas Horneadas Alcagüete">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Alcagüete</span>
+                  <h3 class="h6">Mini Pandeyucas Horneadas</h3>
+                  <span class="text-muted small">90g (6 x 15g)</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/quinoaclub-rosquitas.jpg" class="card-img-top" alt="Rosquitas con Quinua y Probióticos QuinoaClub">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">QuinoaClub</span>
+                  <h3 class="h6">Rosquitas con Quinua y Probióticos</h3>
+                  <span class="text-muted small">90g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/jau-mini-galletas-avena-frutos-rojos.jpg" class="card-img-top" alt="Mini Galletas con Avena y Frutos Rojos Jau! Snacks">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Jau! Snacks</span>
+                  <h3 class="h6">Mini Galletas con Avena y Frutos Rojos</h3>
+                  <span class="text-muted small">50g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/mauka-arrowroot-biscuits.jpg" class="card-img-top" alt="Arrowroot Biscuits Achiras de Sagú Mauka">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Mauka</span>
+                  <h3 class="h6">Arrowroot Biscuits (Achiras de Sagú)</h3>
+                  <span class="text-muted small">20g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-galletas-chips-chocolate.jpg" class="card-img-top" alt="Galletas de Harina de Arroz con Chips de Chocolate Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Galletas de Harina de Arroz con Chips de Chocolate</h3>
+                  <span class="text-muted small">44g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-galletas-arandanos.jpg" class="card-img-top" alt="Galletas de Arroz con Arándanos Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Galletas de Arroz con Arándanos</h3>
+                  <span class="text-muted small">70g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-galletas-avena.jpg" class="card-img-top" alt="Galletas de Harina de Arroz con Avena Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Galletas de Harina de Arroz con Avena</h3>
+                  <span class="text-muted small">120g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-galletas-almendras.jpg" class="card-img-top" alt="Galletas de Arroz con Almendras Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Galletas de Arroz con Almendras</h3>
+                  <span class="text-muted small">70g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/suvifit-barra-mix.jpg" class="card-img-top" alt="Barra Mix Suvi Fit">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Suvi Fit</span>
+                  <h3 class="h6">Barra Mix</h3>
+                  <span class="text-muted small">25g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/seri-mermelada-fresa.jpg" class="card-img-top" alt="Mermelada de Fresa Sin Azúcar Añadida Seri Foods">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Seri Foods</span>
+                  <h3 class="h6">Mermelada de Fresa Sin Azúcar Añadida</h3>
+                  <span class="text-muted small">250g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/quinoaclub-quinua-arepa.jpg" class="card-img-top" alt="Quinua Arepa QuinoaClub">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">QuinoaClub</span>
+                  <h3 class="h6">Quinua Arepa</h3>
+                  <span class="text-muted small">400g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-crema-cacao-avellanas.jpg" class="card-img-top" alt="Crema de Cacao y Avellanas Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6">Crema de Cacao y Avellanas</h3>
+                  <span class="text-muted small">284g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-pan-tajado.jpg" class="card-img-top" alt="Pan Tajado Harina de Arroz Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Pan Tajado</h3>
+                  <span class="text-muted small">500g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-pan-sagu-arequipe.jpg" class="card-img-top" alt="Pan Harina de Arroz con Sagú y Arequipe Sin Azúcar Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Pan Harina de Arroz con Sagú y Arequipe</h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-pan-amapola.jpg" class="card-img-top" alt="Pan Harina de Arroz con Semillas de Amapola Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Pan Harina de Arroz con Semillas de Amapola</h3>
+                  <span class="text-muted small">400g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-pan-amapola-guayaba.jpg" class="card-img-top" alt="Pan Harina de Arroz con Semillas de Amapola y Dulce de Guayaba Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6">Pan Harina de Arroz con Semillas de Amapola y Dulce de Guayaba</h3>
+                  <span class="text-muted small">450g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/porcion-torta-chocolate.jpg" class="card-img-top" alt="Porción de Torta de Chocolate">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6">Porción de Torta de Chocolate</h3>
+                  <span class="text-muted small">1 porción</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">-</span>
+                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <nav class="d-flex justify-content-center gap-2 mt-5" aria-label="Paginación del catálogo">
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-circle" aria-current="page">1</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie-azul pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <img src="img/logo-icono.png" alt="Healthy Box" height="40" class="mb-3">
+          <p class="small">Curamos y seleccionamos los mejores snacks saludables de las marcas más conscientes del mercado. Sabor y bienestar en una sola caja.</p>
+          <div class="redes d-flex gap-2">
+            <a href="#" aria-label="Instagram @healthybox_sahagun"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" aria-label="Chat / WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6>ENLACES</h6>
+          <ul class="list-unstyled d-grid gap-2 small">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="detalle.html">Detalles</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h6>CONTACTO</h6>
+          <ul class="list-unstyled d-grid gap-2 small">
+            <li><i class="bi bi-geo-alt-fill me-1"></i> Cr 9 #17 Sahagún, Córdoba, Colombia</li>
+            <li><i class="bi bi-telephone-fill me-1"></i> +57 301 488 2810</li>
+            <li><i class="bi bi-envelope-fill me-1"></i> boxhealthy821@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 small border-top border-light border-opacity-25 mt-4 pt-3">
+        <span>© 2026 Healthy Box. Todos los derechos reservados.</span>
+        <span>Desarrollado con amor por el bienestar <i class="bi bi-flower1"></i></span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="boton-flotante boton-flotante--wa" aria-label="Escríbenos por WhatsApp">
+    <i class="bi bi-whatsapp fs-4"></i>
+  </a>
+  <a href="#" class="boton-flotante boton-flotante--arriba" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up fs-5"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
