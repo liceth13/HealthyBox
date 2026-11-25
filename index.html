@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header class="navbar navbar-expand-lg sticky-top py-3">
+    <header class="navbar navbar-expand-lg sticky-top py-3">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="img/logo-icono.png" alt="Logo Healthy Box">
@@ -25,50 +25,71 @@
       <div class="navbar-collapse collapse d-lg-flex justify-content-between align-items-center" id="navbarPrincipal">
         <ul class="navbar-nav mx-lg-auto my-3 my-lg-0 gap-lg-2">
           <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Quiénes Somos</a></li>
           <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="detalle.html">Detalles</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
 
-        <div class="d-flex align-items-center gap-3">
-          <a href="#" class="icono-usuario" aria-label="Buscar"><i class="bi bi-search fs-5"></i></a>
-          <a href="#" class="icono-usuario" aria-label="Mi cuenta"><i class="bi bi-person fs-5"></i></a>
-          <a href="#" class="position-relative icono-usuario" aria-label="Carrito de compras (simulado, aún sin funcionalidad real)">
-            <i class="bi bi-cart3 fs-5"></i>
-            <span class="badge-carrito badge rounded-pill position-absolute top-0 start-100 translate-middle">2</span>
-          </a>
-        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="py-5 hero-color">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <span class="hero-badge mb-3"><i class="bi bi-patch-check-fill"></i> 100% Saludable, Consciente &amp; Delicioso</span>
-            <h1 class="display-5 mb-3">Snacks saludables para cada momento</h1>
-            <p class="text-muted mb-4">Seleccionamos cuidadosamente las mejores marcas locales e internacionales para que disfrutes de la comida consciente sin renunciar al sabor.</p>
-            <div class="d-flex gap-3 flex-wrap">
-              <a href="productos.html" class="btn btn-primary btn-lg">Ver Productos</a>
-              <a href="nosotros.html" class="btn btn-outline-primary btn-lg">Conócenos</a>
+        <section class="hero-carrusel">
+      <div id="carruselHero" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" aria-label="Carrusel principal de Healthy Box">
+        <div class="carousel-indicators"><button type="button" data-bs-target="#carruselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button><button type="button" data-bs-target="#carruselHero" data-bs-slide-to="1" aria-label="Diapositiva 2"></button><button type="button" data-bs-target="#carruselHero" data-bs-slide-to="2" aria-label="Diapositiva 3"></button></div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banner-torta.jpg" class="hero-slide-img d-block" alt="Tortas integrales marmoladas con cacao">
+          <div class="carousel-caption-hb">
+            <div class="container">
+              <div class="hero-texto">
+                <span class="hero-badge mb-3"><i class="bi bi-patch-check-fill"></i> 100% Saludable, Consciente &amp; Delicioso</span>
+                <h1 class="display-4 mb-3">Snacks saludables para cada momento</h1>
+                <p class="mb-4">Seleccionamos cuidadosamente las mejores marcas locales e internacionales para que disfrutes de la comida consciente sin renunciar al sabor.</p>
+                <div class="d-flex gap-3 flex-wrap"><a href="productos.html" class="btn btn-primary btn-lg">Ver Productos</a><a href="nosotros.html" class="btn btn-outline-light btn-lg">Conócenos</a></div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <img src="img/hero-caja.jpg" alt="Caja Healthy Box con variedad de snacks saludables" class="hero-img">
+        </div>
+        <div class="carousel-item">
+          <img src="img/hero-caja.jpg" class="hero-slide-img d-block" alt="Tortas integrales y barras de la caja Healthy Box">
+          <div class="carousel-caption-hb">
+            <div class="container">
+              <div class="hero-texto">
+                <span class="hero-badge mb-3"><i class="bi bi-patch-check-fill"></i> Hecho con cariño</span>
+                <h2 class="display-4 mb-3">Cajas armadas con detalles para ti</h2>
+                <p class="mb-4">Cada caja Healthy Box se prepara a mano y puede llevar una nota personalizada para regalar o para consentirte.</p>
+                <div class="d-flex gap-3 flex-wrap"><a href="nosotros.html" class="btn btn-primary btn-lg">Conoce nuestra historia</a></div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="carousel-item">
+          <img src="img/caja-nota.jpg" class="hero-slide-img d-block" alt="Galletas y biscuits de la caja Healthy Box">
+          <div class="carousel-caption-hb">
+            <div class="container">
+              <div class="hero-texto">
+                <span class="hero-badge mb-3"><i class="bi bi-patch-check-fill"></i> Marcas seleccionadas</span>
+                <h2 class="display-4 mb-3">Sabor y bienestar en una sola caja</h2>
+                <p class="mb-4">Galletas, barras, chips y despensa saludable: opciones sin azúcar añadida, ricas en proteína, veganas o sin gluten.</p>
+                <div class="d-flex gap-3 flex-wrap"><a href="productos.html" class="btn btn-primary btn-lg">Explorar el catálogo</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselHero" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselHero" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
       </div>
     </section>
 
-    <svg class="ola-marca" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true">
+        <svg class="ola-marca" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true">
       <path class="ola-verde" d="M0,20 C240,0 480,38 720,22 C960,8 1200,40 1440,18 L1440,48 L0,48 Z"/>
       <path class="ola-azul" d="M0,30 C240,12 480,46 720,32 C960,18 1200,46 1440,28 L1440,48 L0,48 Z"/>
     </svg>
 
-    <section class="py-5 bg-crema">
+        <section class="py-5 bg-crema">
       <div class="container">
         <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
           <div>
@@ -78,67 +99,154 @@
           <a href="productos.html" class="fw-semibold text-verde text-decoration-underline">Ver Todo el Catálogo →</a>
         </div>
 
-        <div class="row row-cols-2 row-cols-md-4 g-4">
-          <div class="col">
-            <div class="card card-producto h-100">
-              <img src="img/paranice-avena-hojuelas.jpg" class="card-img-top" alt="Avena en Hojuelas Paranice">
-              <div class="card-body d-flex flex-column">
-                <span class="marca-producto">Paranice</span>
-                <h3 class="h6">Avena en Hojuelas</h3>
-                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                  <span class="precio">-</span>
-                  <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+        <div id="carruselDestacados" class="carousel slide carrusel-prod" data-bs-ride="carousel" data-bs-interval="5000" aria-label="Carrusel de productos destacados">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselDestacados" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Productos 1 a 4"></button>
+            <button type="button" data-bs-target="#carruselDestacados" data-bs-slide-to="1" aria-label="Productos 5 a 8"></button>
+          </div>
+          <div class="carousel-inner pb-5">
+            <div class="carousel-item active">
+              <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-avena-hojuelas.jpg" class="card-img-top" alt="Avena en Hojuelas Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6"><a href="detalle.html#paranice-avena-hojuelas" class="stretched-link text-reset text-decoration-none">Avena en Hojuelas</a></h3>
+                  <span class="text-muted small">1kg</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$30.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Paranice%20Avena%20en%20Hojuelas%20%281kg%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col">
-            <div class="card card-producto h-100">
-              <img src="img/selectum-cereal-quinua-chocolate.jpg" class="card-img-top" alt="Cereal de Quinua Selectum">
-              <div class="card-body d-flex flex-column">
-                <span class="marca-producto">Selectum</span>
-                <h3 class="h6">Cereal de Quinua con Amaranto y Mijo</h3>
-                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                  <span class="precio">-</span>
-                  <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/selectum-cereal-quinua-chocolate.jpg" class="card-img-top" alt="Cereal de Quinua con Amaranto y Mijo sabor Chocolate Selectum">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Selectum</span>
+                  <h3 class="h6"><a href="detalle.html#selectum-cereal-quinua-chocolate" class="stretched-link text-reset text-decoration-none">Cereal de Quinua con Amaranto y Mijo - Chocolate</a></h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$28.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Selectum%20Cereal%20de%20Quinua%20con%20Amaranto%20y%20Mijo%20-%20Chocolate%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col">
-            <div class="card card-producto h-100">
-              <img src="img/monterojo-papas-lima-limon.jpg" class="card-img-top" alt="Papas Lima-Limón Monterojo">
-              <div class="card-body d-flex flex-column">
-                <span class="marca-producto">Monterojo</span>
-                <h3 class="h6">Papas Lima-Limón</h3>
-                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                  <span class="precio">-</span>
-                  <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/monterojo-papas-lima-limon.jpg" class="card-img-top" alt="Papas Lima-Limón Monterojo Gourmet">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Monterojo Gourmet</span>
+                  <h3 class="h6"><a href="detalle.html#monterojo-papas-lima-limon" class="stretched-link text-reset text-decoration-none">Papas Lima-Limón</a></h3>
+                  <span class="text-muted small">115g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Monterojo%20Gourmet%20Papas%20Lima-Lim%C3%B3n%20%28115g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col">
-            <div class="card card-producto h-100">
-              <img src="img/date-syrup-natural.jpg" class="card-img-top" alt="Date Syrup Natural Al Barakah Dates">
-              <div class="card-body d-flex flex-column">
-                <span class="marca-producto">Al Barakah Dates</span>
-                <h3 class="h6">Date Syrup Natural</h3>
-                <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                  <span class="precio">-</span>
-                  <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/date-syrup-natural.jpg" class="card-img-top" alt="Date Syrup Natural Al Barakah Dates">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Al Barakah Dates</span>
+                  <h3 class="h6"><a href="detalle.html#date-syrup-natural" class="stretched-link text-reset text-decoration-none">Date Syrup Natural</a></h3>
+                  <span class="text-muted small">250g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$23.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Al%20Barakah%20Dates%20Date%20Syrup%20Natural%20%28250g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
                 </div>
               </div>
             </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-pan-sagu-arequipe.jpg" class="card-img-top" alt="Pan Harina de Arroz con Sagú y Arequipe Sin Azúcar Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6"><a href="detalle.html#damar-pan-sagu-arequipe" class="stretched-link text-reset text-decoration-none">Pan Harina de Arroz con Sagú y Arequipe</a></h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$13.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Pan%20Harina%20de%20Arroz%20con%20Sag%C3%BA%20y%20Arequipe%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/fitbell-golden-bites.jpg" class="card-img-top" alt="Golden Bites rellenos de Arequipe FitBell">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">FitBell</span>
+                  <h3 class="h6"><a href="detalle.html#fitbell-golden-bites" class="stretched-link text-reset text-decoration-none">Golden Bites rellenos de Arequipe</a></h3>
+                  <span class="text-muted small">60g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$6.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20FitBell%20Golden%20Bites%20rellenos%20de%20Arequipe%20%2860g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-granola-chocolate.jpg" class="card-img-top" alt="GranOla Chocolate Chip Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6"><a href="detalle.html#paranice-granola-chocolate" class="stretched-link text-reset text-decoration-none">GranOla Chocolate Chip</a></h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$36.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Paranice%20GranOla%20Chocolate%20Chip%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/vitad-galletas-vainilla.jpg" class="card-img-top" alt="Galletas de Vainilla Sin Culpa Vitad">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Vitad</span>
+                  <h3 class="h6"><a href="detalle.html#vitad-galletas-vainilla" class="stretched-link text-reset text-decoration-none">Galletas de Vainilla Sin Culpa</a></h3>
+                  <span class="text-muted small">4 x 30g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Vitad%20Galletas%20de%20Vainilla%20Sin%20Culpa%20%284%20x%2030g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              </div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselDestacados" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselDestacados" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="py-5">
+        <section class="py-5">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-5">
@@ -171,7 +279,7 @@
       </div>
     </section>
 
-    <section class="py-5 bg-crema">
+        <section class="py-5 bg-crema">
       <div class="container">
         <div class="caja-suscripcion p-4 p-lg-5">
           <div class="row g-5 align-items-center">
@@ -186,21 +294,25 @@
               </ul>
             </div>
             <div class="col-lg-6">
-              <form class="card p-4 shadow-sm border-0">
+              <form class="card p-4 shadow-sm border-0" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="7e4ecec6-5a29-4eb7-8053-2802646640e2">
+                <input type="hidden" name="subject" value="Nueva suscripción a Healthy Box">
+                <input type="hidden" name="from_name" value="Sitio web Healthy Box">
+                <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off">
                 <h3 class="h5 mb-3">Recibe las novedades en tu correo</h3>
                 <div class="mb-3">
                   <label class="form-label fw-semibold">Nombre</label>
-                  <input type="text" class="form-control" placeholder="Tu nombre">
+                  <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
                 </div>
                 <div class="mb-3">
                   <label class="form-label fw-semibold">Correo electrónico</label>
-                  <input type="email" class="form-control" placeholder="tucorreo@ejemplo.com">
+                  <input type="email" name="email" class="form-control" placeholder="tucorreo@ejemplo.com" required>
                 </div>
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" id="aceptoNovedades">
+                  <input class="form-check-input" type="checkbox" name="acepta_novedades" id="aceptoNovedades" required>
                   <label class="form-check-label small text-muted" for="aceptoNovedades">Acepto recibir novedades y ofertas de Healthy Box</label>
                 </div>
-                <button type="button" class="btn btn-primary w-100">Suscribirme gratis</button>
+                <button type="submit" class="btn btn-primary w-100">Suscribirme gratis</button>
                 <p class="text-muted small text-center mt-3 mb-0">Es gratis y puedes darte de baja cuando quieras.</p>
               </form>
             </div>
@@ -210,24 +322,23 @@
     </section>
   </main>
 
-  <footer class="pie-azul pt-5 pb-3">
+    <footer class="pie-azul pt-5 pb-3">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-5">
-          <img src="img/logo-icono.png" alt="Healthy Box" height="40" class="mb-3">
+          <img src="img/logo-icono.png" alt="Healthy Box" height="40" class="mb-3" style="filter:brightness(0) invert(1);">
           <p class="small">Curamos y seleccionamos los mejores snacks saludables de las marcas más conscientes del mercado. Sabor y bienestar en una sola caja.</p>
           <div class="redes d-flex gap-2">
-            <a href="#" aria-label="Instagram @healthybox_sahagun"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="#" aria-label="Chat / WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+            <a href="https://www.instagram.com/licethlp07?knvt=MXJ4OGp3YTh5czN5NA==" aria-label="Instagram @healthybox_sahagun"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="https://wa.me/573042236264" target="_blank" rel="noopener" aria-label="Chat / WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
           </div>
         </div>
         <div class="col-6 col-lg-3">
           <h6>ENLACES</h6>
           <ul class="list-unstyled d-grid gap-2 small">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="nosotros.html">Quiénes Somos</a></li>
             <li><a href="productos.html">Productos</a></li>
-            <li><a href="detalle.html">Detalles</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -235,8 +346,8 @@
           <h6>CONTACTO</h6>
           <ul class="list-unstyled d-grid gap-2 small">
             <li><i class="bi bi-geo-alt-fill me-1"></i> Cr 9 #17 Sahagún, Córdoba, Colombia</li>
-            <li><i class="bi bi-telephone-fill me-1"></i> +57 301 488 2810</li>
-            <li><i class="bi bi-envelope-fill me-1"></i> boxhealthy821@gmail.com</li>
+            <li><i class="bi bi-telephone-fill me-1"></i> +57 304 223 6264</li>
+            <li><i class="bi bi-envelope-fill me-1"></i> liclpz1720@gmail.com</li>
           </ul>
         </div>
       </div>
@@ -247,7 +358,7 @@
     </div>
   </footer>
 
-  <a href="#" class="boton-flotante boton-flotante--wa" aria-label="Escríbenos por WhatsApp">
+  <a href="https://wa.me/573042236264" target="_blank" rel="noopener" class="boton-flotante boton-flotante--wa" aria-label="Escríbenos por WhatsApp">
     <i class="bi bi-whatsapp fs-4"></i>
   </a>
   <a href="#" class="boton-flotante boton-flotante--arriba" aria-label="Volver arriba">
@@ -255,5 +366,6 @@
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

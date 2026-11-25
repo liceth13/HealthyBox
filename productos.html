@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header class="navbar navbar-expand-lg sticky-top py-3">
+    <header class="navbar navbar-expand-lg sticky-top py-3">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="img/logo-icono.png" alt="Logo Healthy Box">
@@ -23,19 +23,10 @@
       <div class="navbar-collapse collapse d-lg-flex justify-content-between align-items-center" id="navbarPrincipal">
         <ul class="navbar-nav mx-lg-auto my-3 my-lg-0 gap-lg-2">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Quiénes Somos</a></li>
           <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="detalle.html">Detalles</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
-        <div class="d-flex align-items-center gap-3">
-          <a href="#" class="icono-usuario" aria-label="Buscar"><i class="bi bi-search fs-5"></i></a>
-          <a href="#" class="icono-usuario" aria-label="Mi cuenta"><i class="bi bi-person fs-5"></i></a>
-          <a href="#" class="position-relative icono-usuario" aria-label="Carrito de compras (simulado, aún sin funcionalidad real)">
-            <i class="bi bi-cart3 fs-5"></i>
-            <span class="badge-carrito badge rounded-pill position-absolute top-0 start-100 translate-middle">2</span>
-          </a>
-        </div>
       </div>
     </div>
   </header>
@@ -43,43 +34,46 @@
   <main class="py-5">
     <div class="container">
       <div class="row g-4">
-
-        <aside class="col-lg-3">
-          <div class="border rounded-4 p-3 lista-filtros">
+                <aside class="col-lg-3">
+          <div class="border rounded-4 p-3 lista-filtros sticky-lg-top" style="top:90px;">
             <h3 class="h6 px-2 mb-2">Categorías</h3>
             <div class="list-group list-group-flush">
-              <div class="list-group-item active">Todos los Snacks <span>38</span></div>
-              <div class="list-group-item">Chips &amp; Besquitas <span>7</span></div>
-              <div class="list-group-item">Galletas y Biscuits <span>8</span></div>
-              <div class="list-group-item">Gomitas &amp; Gelatinas <span>1</span></div>
-              <div class="list-group-item">Barras &amp; Caramelos <span>2</span></div>
-              <div class="list-group-item">Brownies &amp; Tortas <span>4</span></div>
+              <a href="#catalogo" class="list-group-item list-group-item-action">Todos los Snacks <span>45</span></a>
+              <a href="#cat-chips" class="list-group-item list-group-item-action">Chips &amp; Besquitas <span>7</span></a>
+              <a href="#cat-galletas" class="list-group-item list-group-item-action">Galletas y Biscuits <span>12</span></a>
+              <a href="#cat-gomitas" class="list-group-item list-group-item-action">Gomitas &amp; Gelatinas <span>1</span></a>
+              <a href="#cat-barras" class="list-group-item list-group-item-action">Barras &amp; Caramelos <span>2</span></a>
+              <a href="#cat-brownies" class="list-group-item list-group-item-action">Brownies &amp; Tortas <span>4</span></a>
             </div>
             <hr>
             <div class="list-group list-group-flush">
-              <div class="list-group-item">Pan Saludable <span>4</span></div>
-              <div class="list-group-item">Despensa <span>10</span></div>
-              <div class="list-group-item">Dátiles &amp; Frutos Secos <span>1</span></div>
-              <div class="list-group-item">Siropes &amp; Endulzantes <span>1</span></div>
+              <a href="#cat-pan" class="list-group-item list-group-item-action">Pan Saludable <span>4</span></a>
+              <a href="#cat-despensa" class="list-group-item list-group-item-action">Despensa <span>13</span></a>
+              <a href="#cat-datiles" class="list-group-item list-group-item-action">Dátiles &amp; Frutos Secos <span>1</span></a>
+              <a href="#cat-siropes" class="list-group-item list-group-item-action">Siropes &amp; Endulzantes <span>1</span></a>
             </div>
           </div>
         </aside>
 
-        <div class="col-lg-9">
+                <div class="col-lg-9" id="catalogo">
           <h1 class="h2 mb-4">Nuestros Productos</h1>
 
-          <div class="row row-cols-2 row-cols-md-3 g-4" id="grid-productos">
+                    <div class="pagina-prod" id="pagina-1" data-default>
+<div class="grupo-productos"><i class="bi bi-cookie"></i><div><h2>Snacks y Antojos</h2><p>Chips, galletas, gomitas y barras para cualquier momento del día.</p></div></div>
 
+          <section id="cat-chips" class="categoria mb-5">
+            <h2 class="h4 mb-4">Chips &amp; Besquitas <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">7</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
             <div class="col">
               <div class="card card-producto h-100">
                 <img src="img/quinoaclub-puffs.jpg" class="card-img-top" alt="Snack de Maíz, Quinua y Chía QuinoaClub">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">QuinoaClub</span>
-                  <h3 class="h6">Snack de Maíz, Quinua y Chía</h3>
+                  <h3 class="h6"><a href="detalle.html#quinoaclub-puffs" class="stretched-link text-reset text-decoration-none">Snack de Maíz, Quinua y Chía</a></h3>
                   <span class="text-muted small">12g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20QuinoaClub%20Snack%20de%20Ma%C3%ADz%2C%20Quinua%20y%20Ch%C3%ADa%20%2812g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -90,251 +84,11 @@
                 <img src="img/monterojo-papas-lima-limon.jpg" class="card-img-top" alt="Papas Lima-Limón Monterojo Gourmet">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Monterojo Gourmet</span>
-                  <h3 class="h6">Papas Lima-Limón</h3>
+                  <h3 class="h6"><a href="detalle.html#monterojo-papas-lima-limon" class="stretched-link text-reset text-decoration-none">Papas Lima-Limón</a></h3>
                   <span class="text-muted small">115g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/vitad-galletas-vainilla.jpg" class="card-img-top" alt="Galletas de Vainilla Sin Culpa Vitad">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Vitad</span>
-                  <h3 class="h6">Galletas de Vainilla Sin Culpa</h3>
-                  <span class="text-muted small">4 x 30g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/damar-galletas-arroz.jpg" class="card-img-top" alt="Galletas de Harina de Arroz Damar">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Galletas de Harina de Arroz</h3>
-                  <span class="text-muted small">70g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/gomitas-naranja.jpg" class="card-img-top" alt="Gomas de Gelatina sabor Naranja Purpose Brands">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Purpose Brands</span>
-                  <h3 class="h6">Gomas de Gelatina sabor Naranja</h3>
-                  <span class="text-muted small">30g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/fitbell-golden-bites.jpg" class="card-img-top" alt="Golden Bites rellenos de Arequipe FitBell">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">FitBell</span>
-                  <h3 class="h6">Golden Bites rellenos de Arequipe</h3>
-                  <span class="text-muted small">60g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/sorbetto-torta-marmolada.jpg" class="card-img-top" alt="Torta Integral Marmolada Sorbetto">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Sorbetto</span>
-                  <h3 class="h6">Torta Integral Marmolada</h3>
-                  <span class="text-muted small">100g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/torta-redonda-caramelo.jpg" class="card-img-top" alt="Torta de Chocolate Sorbetto">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Sorbetto</span>
-                  <h3 class="h6">Torta de Chocolate</h3>
-                  <span class="text-muted small">300g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/fitbell-brownie-crunch.jpg" class="card-img-top" alt="Brownie Crunch FitBell">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">FitBell</span>
-                  <h3 class="h6">Brownie Crunch</h3>
-                  <span class="text-muted small">150g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/purpose-mezcla-pancakes.jpg" class="card-img-top" alt="Mezcla para Pancakes y Waffles Purpose Brands">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Purpose Brands</span>
-                  <h3 class="h6">Mezcla para Pancakes &amp; Waffles</h3>
-                  <span class="text-muted small">300g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/paranice-pancakes-waffles-x3.jpg" class="card-img-top" alt="Pancakes y Waffles a base de Avena Paranice">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Paranice</span>
-                  <h3 class="h6">Pancakes &amp; Waffles a base de Avena</h3>
-                  <span class="text-muted small">300g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/paranice-avena-hojuelas.jpg" class="card-img-top" alt="Avena en Hojuelas Paranice">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Paranice</span>
-                  <h3 class="h6">Avena en Hojuelas</h3>
-                  <span class="text-muted small">1kg</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/paranice-harina-avena.jpg" class="card-img-top" alt="Harina de Avena Paranice">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Paranice</span>
-                  <h3 class="h6">Harina de Avena</h3>
-                  <span class="text-muted small">1kg</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/paranice-granola-chocolate.jpg" class="card-img-top" alt="GranOla Chocolate Chip Paranice">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Paranice</span>
-                  <h3 class="h6">GranOla Chocolate Chip</h3>
-                  <span class="text-muted small">300g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/selectum-cereal-quinua-chocolate.jpg" class="card-img-top" alt="Cereal de Quinua con Amaranto y Mijo sabor Chocolate Selectum">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Selectum</span>
-                  <h3 class="h6">Cereal de Quinua con Amaranto y Mijo - Chocolate</h3>
-                  <span class="text-muted small">300g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/selectum-cereal-quinua-miel-arandanos.jpg" class="card-img-top" alt="Cereal de Quinua con Amaranto y Mijo sabor Miel y Arándanos Selectum">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Selectum</span>
-                  <h3 class="h6">Cereal de Quinua con Amaranto y Mijo - Miel y Arándanos</h3>
-                  <span class="text-muted small">300g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/date-syrup-natural.jpg" class="card-img-top" alt="Date Syrup Natural Al Barakah Dates">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Al Barakah Dates</span>
-                  <h3 class="h6">Date Syrup Natural</h3>
-                  <span class="text-muted small">250g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/walla-habibi-dates.jpg" class="card-img-top" alt="Dátil Deglet Nour Sin Semilla Yalla Habibi">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Yalla Habibi</span>
-                  <h3 class="h6">Dátil Deglet Nour Sin Semilla</h3>
-                  <span class="text-muted small">200g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Monterojo%20Gourmet%20Papas%20Lima-Lim%C3%B3n%20%28115g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -345,11 +99,11 @@
                 <img src="img/monterojo-papas-bbq-dulce.jpg" class="card-img-top" alt="Papas BBQ Dulce Monterojo Gourmet">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Monterojo Gourmet</span>
-                  <h3 class="h6">Papas BBQ Dulce</h3>
+                  <h3 class="h6"><a href="detalle.html#monterojo-papas-bbq-dulce" class="stretched-link text-reset text-decoration-none">Papas BBQ Dulce</a></h3>
                   <span class="text-muted small">115g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Monterojo%20Gourmet%20Papas%20BBQ%20Dulce%20%28115g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -360,11 +114,11 @@
                 <img src="img/vitad-platanos-maduros.jpg" class="card-img-top" alt="Plátanos Maduros Sin Culpa Vitad">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Vitad</span>
-                  <h3 class="h6">Plátanos Maduros Sin Culpa</h3>
+                  <h3 class="h6"><a href="detalle.html#vitad-platanos-maduros" class="stretched-link text-reset text-decoration-none">Plátanos Maduros Sin Culpa</a></h3>
                   <span class="text-muted small">21g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Vitad%20Pl%C3%A1tanos%20Maduros%20Sin%20Culpa%20%2821g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -375,11 +129,11 @@
                 <img src="img/uau-ditos-queso-cheddar.jpg" class="card-img-top" alt="Ditos Horneados de Maíz sabor Queso Cheddar UAU!">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">UAU!</span>
-                  <h3 class="h6">Ditos Horneados de Maíz sabor Queso Cheddar</h3>
+                  <h3 class="h6"><a href="detalle.html#uau-ditos-queso-cheddar" class="stretched-link text-reset text-decoration-none">Ditos Horneados de Maíz sabor Queso Cheddar</a></h3>
                   <span class="text-muted small">10g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20UAU%21%20Ditos%20Horneados%20de%20Ma%C3%ADz%20sabor%20Queso%20Cheddar%20%2810g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -390,11 +144,11 @@
                 <img src="img/alcaguete-mini-pandeyucas.jpg" class="card-img-top" alt="Mini Pandeyucas Horneadas Alcagüete">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Alcagüete</span>
-                  <h3 class="h6">Mini Pandeyucas Horneadas</h3>
+                  <h3 class="h6"><a href="detalle.html#alcaguete-mini-pandeyucas" class="stretched-link text-reset text-decoration-none">Mini Pandeyucas Horneadas</a></h3>
                   <span class="text-muted small">90g (6 x 15g)</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Alcag%C3%BCete%20Mini%20Pandeyucas%20Horneadas%20%2890g%20%286%20x%2015g%29%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -405,11 +159,32 @@
                 <img src="img/quinoaclub-rosquitas.jpg" class="card-img-top" alt="Rosquitas con Quinua y Probióticos QuinoaClub">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">QuinoaClub</span>
-                  <h3 class="h6">Rosquitas con Quinua y Probióticos</h3>
+                  <h3 class="h6"><a href="detalle.html#quinoaclub-rosquitas" class="stretched-link text-reset text-decoration-none">Rosquitas con Quinua y Probióticos</a></h3>
                   <span class="text-muted small">90g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20QuinoaClub%20Rosquitas%20con%20Quinua%20y%20Probi%C3%B3ticos%20%2890g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </section>
+
+          <section id="cat-galletas" class="categoria mb-5">
+            <h2 class="h4 mb-4">Galletas y Biscuits <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">12</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/vitad-galletas-vainilla.jpg" class="card-img-top" alt="Galletas de Vainilla Sin Culpa Vitad">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Vitad</span>
+                  <h3 class="h6"><a href="detalle.html#vitad-galletas-vainilla" class="stretched-link text-reset text-decoration-none">Galletas de Vainilla Sin Culpa</a></h3>
+                  <span class="text-muted small">4 x 30g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Vitad%20Galletas%20de%20Vainilla%20Sin%20Culpa%20%284%20x%2030g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -417,14 +192,29 @@
 
             <div class="col">
               <div class="card card-producto h-100">
-                <img src="img/jau-mini-galletas-avena-frutos-rojos.jpg" class="card-img-top" alt="Mini Galletas con Avena y Frutos Rojos Jau! Snacks">
+                <img src="img/damar-galletas-arroz.jpg" class="card-img-top" alt="Galletas de Harina de Arroz Damar">
                 <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Jau! Snacks</span>
-                  <h3 class="h6">Mini Galletas con Avena y Frutos Rojos</h3>
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6"><a href="detalle.html#damar-galletas-arroz" class="stretched-link text-reset text-decoration-none">Galletas de Harina de Arroz</a></h3>
+                  <span class="text-muted small">70g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Galletas%20de%20Harina%20de%20Arroz%20%2870g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/jau-mini-galletas-avena-frutos-rojos.jpg" class="card-img-top" alt="Mini Galletas con Avena y Frutos Rojos UAU! Snacks">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">UAU! Snacks</span>
+                  <h3 class="h6"><a href="detalle.html#jau-mini-galletas-avena-frutos-rojos" class="stretched-link text-reset text-decoration-none">Mini Galletas con Avena y Frutos Rojos</a></h3>
                   <span class="text-muted small">50g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20UAU%21%20Snacks%20Mini%20Galletas%20con%20Avena%20y%20Frutos%20Rojos%20%2850g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -435,11 +225,11 @@
                 <img src="img/mauka-arrowroot-biscuits.jpg" class="card-img-top" alt="Arrowroot Biscuits Achiras de Sagú Mauka">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Mauka</span>
-                  <h3 class="h6">Arrowroot Biscuits (Achiras de Sagú)</h3>
+                  <h3 class="h6"><a href="detalle.html#mauka-arrowroot-biscuits" class="stretched-link text-reset text-decoration-none">Arrowroot Biscuits (Achiras de Sagú)</a></h3>
                   <span class="text-muted small">20g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$3.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Mauka%20Arrowroot%20Biscuits%20%28Achiras%20de%20Sag%C3%BA%29%20%2820g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -450,11 +240,11 @@
                 <img src="img/damar-galletas-chips-chocolate.jpg" class="card-img-top" alt="Galletas de Harina de Arroz con Chips de Chocolate Damar">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Galletas de Harina de Arroz con Chips de Chocolate</h3>
+                  <h3 class="h6"><a href="detalle.html#damar-galletas-chips-chocolate" class="stretched-link text-reset text-decoration-none">Galletas de Harina de Arroz con Chips de Chocolate</a></h3>
                   <span class="text-muted small">44g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Galletas%20de%20Harina%20de%20Arroz%20con%20Chips%20de%20Chocolate%20%2844g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -465,11 +255,11 @@
                 <img src="img/damar-galletas-arandanos.jpg" class="card-img-top" alt="Galletas de Arroz con Arándanos Damar">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Galletas de Arroz con Arándanos</h3>
+                  <h3 class="h6"><a href="detalle.html#damar-galletas-arandanos" class="stretched-link text-reset text-decoration-none">Galletas de Arroz con Arándanos</a></h3>
                   <span class="text-muted small">70g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Galletas%20de%20Arroz%20con%20Ar%C3%A1ndanos%20%2870g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -480,11 +270,11 @@
                 <img src="img/damar-galletas-avena.jpg" class="card-img-top" alt="Galletas de Harina de Arroz con Avena Damar">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Galletas de Harina de Arroz con Avena</h3>
+                  <h3 class="h6"><a href="detalle.html#damar-galletas-avena" class="stretched-link text-reset text-decoration-none">Galletas de Harina de Arroz con Avena</a></h3>
                   <span class="text-muted small">120g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Galletas%20de%20Harina%20de%20Arroz%20con%20Avena%20%28120g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -495,11 +285,112 @@
                 <img src="img/damar-galletas-almendras.jpg" class="card-img-top" alt="Galletas de Arroz con Almendras Damar">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Galletas de Arroz con Almendras</h3>
+                  <h3 class="h6"><a href="detalle.html#damar-galletas-almendras" class="stretched-link text-reset text-decoration-none">Galletas de Arroz con Almendras</a></h3>
                   <span class="text-muted small">70g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Galletas%20de%20Arroz%20con%20Almendras%20%2870g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/sorbetto-galleta-tres-leches-arequipe.jpg" class="card-img-top" alt="Galleta Premium Tres Leches Arequipe Sorbetto">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6"><a href="detalle.html#sorbetto-galleta-tres-leches-arequipe" class="stretched-link text-reset text-decoration-none">Galleta Premium Tres Leches Arequipe</a></h3>
+                  <span class="text-muted small">100g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Sorbetto%20Galleta%20Premium%20Tres%20Leches%20Arequipe%20%28100g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/sorbetto-galleta-nutella.jpg" class="card-img-top" alt="Galleta Premium Nutella Sorbetto">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6"><a href="detalle.html#sorbetto-galleta-nutella" class="stretched-link text-reset text-decoration-none">Galleta Premium Nutella</a></h3>
+                  <span class="text-muted small">100g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Sorbetto%20Galleta%20Premium%20Nutella%20%28100g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/sorbetto-galleta-caramelo-arequipe.jpg" class="card-img-top" alt="Galleta Premium Caramelo Arequipe Sorbetto">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6"><a href="detalle.html#sorbetto-galleta-caramelo-arequipe" class="stretched-link text-reset text-decoration-none">Galleta Premium Caramelo Arequipe</a></h3>
+                  <span class="text-muted small">100g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Sorbetto%20Galleta%20Premium%20Caramelo%20Arequipe%20%28100g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/sorbetto-galleta-coffee-delight.jpg" class="card-img-top" alt="Galleta Premium Coffee Delight Sorbetto">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6"><a href="detalle.html#sorbetto-galleta-coffee-delight" class="stretched-link text-reset text-decoration-none">Galleta Premium Coffee Delight</a></h3>
+                  <span class="text-muted small">100g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Sorbetto%20Galleta%20Premium%20Coffee%20Delight%20%28100g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+
+          <section id="cat-gomitas" class="categoria mb-5">
+            <h2 class="h4 mb-4">Gomitas &amp; Gelatinas <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">1</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/gomitas-naranja.jpg" class="card-img-top" alt="Gomas de Gelatina sabor Naranja Purpose Brands">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Purpose Brands</span>
+                  <h3 class="h6"><a href="detalle.html#gomitas-naranja" class="stretched-link text-reset text-decoration-none">Gomas de Gelatina sabor Naranja</a></h3>
+                  <span class="text-muted small">30g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$7.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Purpose%20Brands%20Gomas%20de%20Gelatina%20sabor%20Naranja%20%2830g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </section>
+
+          <section id="cat-barras" class="categoria mb-5">
+            <h2 class="h4 mb-4">Barras &amp; Caramelos <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">2</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/fitbell-golden-bites.jpg" class="card-img-top" alt="Golden Bites rellenos de Arequipe FitBell">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">FitBell</span>
+                  <h3 class="h6"><a href="detalle.html#fitbell-golden-bites" class="stretched-link text-reset text-decoration-none">Golden Bites rellenos de Arequipe</a></h3>
+                  <span class="text-muted small">60g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$6.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20FitBell%20Golden%20Bites%20rellenos%20de%20Arequipe%20%2860g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -510,11 +401,43 @@
                 <img src="img/suvifit-barra-mix.jpg" class="card-img-top" alt="Barra Mix Suvi Fit">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Suvi Fit</span>
-                  <h3 class="h6">Barra Mix</h3>
+                  <h3 class="h6"><a href="detalle.html#suvifit-barra-mix" class="stretched-link text-reset text-decoration-none">Barra Mix</a></h3>
                   <span class="text-muted small">25g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$4.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Suvi%20Fit%20Barra%20Mix%20%2825g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </section>
+
+          <nav class="d-flex justify-content-center gap-2 mt-5" aria-label="Paginación del catálogo">
+            <a href="#pagina-1" class="btn btn-primary btn-sm rounded-circle" aria-current="page">1</a>
+            <a href="#pagina-2" class="btn btn-outline-primary btn-sm rounded-circle">2</a>
+            <a href="#pagina-3" class="btn btn-outline-primary btn-sm rounded-circle">3</a>
+            <a href="#pagina-2" class="btn btn-outline-primary btn-sm rounded-circle" aria-label="Página siguiente">&raquo;</a>
+          </nav>
+          </div>
+
+          <div class="pagina-prod" id="pagina-2">
+<div class="grupo-productos"><i class="bi bi-cake2"></i><div><h2>Panadería y Dulces</h2><p>Tortas, brownies y panes saludables para disfrutar sin culpa.</p></div></div>
+
+          <section id="cat-brownies" class="categoria mb-5">
+            <h2 class="h4 mb-4">Brownies &amp; Tortas <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">4</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/sorbetto-torta-marmolada.jpg" class="card-img-top" alt="Torta Integral Marmolada Sorbetto">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6"><a href="detalle.html#sorbetto-torta-marmolada" class="stretched-link text-reset text-decoration-none">Torta Integral Marmolada</a></h3>
+                  <span class="text-muted small">100g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$5.500</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Sorbetto%20Torta%20Integral%20Marmolada%20%28100g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -522,14 +445,14 @@
 
             <div class="col">
               <div class="card card-producto h-100">
-                <img src="img/seri-mermelada-fresa.jpg" class="card-img-top" alt="Mermelada de Fresa Sin Azúcar Añadida Seri Foods">
+                <img src="img/torta-redonda-caramelo.jpg" class="card-img-top" alt="Torta de Chocolate Sorbetto">
                 <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Seri Foods</span>
-                  <h3 class="h6">Mermelada de Fresa Sin Azúcar Añadida</h3>
-                  <span class="text-muted small">250g</span>
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6"><a href="detalle.html#torta-redonda-caramelo" class="stretched-link text-reset text-decoration-none">Torta de Chocolate</a></h3>
+                  <span class="text-muted small">300g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$60.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Sorbetto%20Torta%20de%20Chocolate%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -537,14 +460,14 @@
 
             <div class="col">
               <div class="card card-producto h-100">
-                <img src="img/quinoaclub-quinua-arepa.jpg" class="card-img-top" alt="Quinua Arepa QuinoaClub">
+                <img src="img/fitbell-brownie-crunch.jpg" class="card-img-top" alt="Brownie Crunch FitBell">
                 <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">QuinoaClub</span>
-                  <h3 class="h6">Quinua Arepa</h3>
-                  <span class="text-muted small">400g</span>
+                  <span class="marca-producto">FitBell</span>
+                  <h3 class="h6"><a href="detalle.html#fitbell-brownie-crunch" class="stretched-link text-reset text-decoration-none">Brownie Crunch</a></h3>
+                  <span class="text-muted small">150g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$11.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20FitBell%20Brownie%20Crunch%20%28150g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -552,45 +475,50 @@
 
             <div class="col">
               <div class="card card-producto h-100">
-                <img src="img/paranice-crema-cacao-avellanas.jpg" class="card-img-top" alt="Crema de Cacao y Avellanas Paranice">
+                <img src="img/porcion-torta-chocolate.jpg" class="card-img-top" alt="Porción de Torta de Chocolate">
                 <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Paranice</span>
-                  <h3 class="h6">Crema de Cacao y Avellanas</h3>
-                  <span class="text-muted small">284g</span>
+                  <span class="marca-producto">Sorbetto</span>
+                  <h3 class="h6"><a href="detalle.html#porcion-torta-chocolate" class="stretched-link text-reset text-decoration-none">Porción de Torta de Chocolate</a></h3>
+                  <span class="text-muted small">1 porción</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$15.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Sorbetto%20Porci%C3%B3n%20de%20Torta%20de%20Chocolate%20%281%20porci%C3%B3n%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
             </div>
 
+            </div>
+          </section>
+
+          <section id="cat-pan" class="categoria mb-5">
+            <h2 class="h4 mb-4">Pan Saludable <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">4</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/damar-pan-sagu-arequipe.jpg" class="card-img-top" alt="Pan Harina de Arroz con Sagú y Arequipe Sin Azúcar Damar">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Damar</span>
+                  <h3 class="h6"><a href="detalle.html#damar-pan-sagu-arequipe" class="stretched-link text-reset text-decoration-none">Pan Harina de Arroz con Sagú y Arequipe</a></h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$13.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Pan%20Harina%20de%20Arroz%20con%20Sag%C3%BA%20y%20Arequipe%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="col">
               <div class="card card-producto h-100">
                 <img src="img/damar-pan-tajado.jpg" class="card-img-top" alt="Pan Tajado Harina de Arroz Damar">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Pan Tajado</h3>
+                  <h3 class="h6"><a href="detalle.html#damar-pan-tajado" class="stretched-link text-reset text-decoration-none">Pan Tajado</a></h3>
                   <span class="text-muted small">500g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card card-producto h-100">
-                <img src="img/damar-pan-sagu-arequipe.jpg" class="card-img-top" alt="Pan Harina de Arroz con Sagú y Arequipe Sin Azúcar Damar">
-                <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Pan Harina de Arroz con Sagú y Arequipe</h3>
-                  <span class="text-muted small">300g</span>
-                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$16.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Pan%20Tajado%20%28500g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -601,11 +529,11 @@
                 <img src="img/damar-pan-amapola.jpg" class="card-img-top" alt="Pan Harina de Arroz con Semillas de Amapola Damar">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Pan Harina de Arroz con Semillas de Amapola</h3>
+                  <h3 class="h6"><a href="detalle.html#damar-pan-amapola" class="stretched-link text-reset text-decoration-none">Pan Harina de Arroz con Semillas de Amapola</a></h3>
                   <span class="text-muted small">400g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$15.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Pan%20Harina%20de%20Arroz%20con%20Semillas%20de%20Amapola%20%28400g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
@@ -616,61 +544,258 @@
                 <img src="img/damar-pan-amapola-guayaba.jpg" class="card-img-top" alt="Pan Harina de Arroz con Semillas de Amapola y Dulce de Guayaba Damar">
                 <div class="card-body d-flex flex-column">
                   <span class="marca-producto">Damar</span>
-                  <h3 class="h6">Pan Harina de Arroz con Semillas de Amapola y Dulce de Guayaba</h3>
+                  <h3 class="h6"><a href="detalle.html#damar-pan-amapola-guayaba" class="stretched-link text-reset text-decoration-none">Pan Harina de Arroz con Semillas de Amapola y Dulce de Guayaba</a></h3>
                   <span class="text-muted small">450g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$15.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Damar%20Pan%20Harina%20de%20Arroz%20con%20Semillas%20de%20Amapola%20y%20Dulce%20de%20Guayaba%20%28450g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
             </div>
 
+            </div>
+          </section>
+
+          <nav class="d-flex justify-content-center gap-2 mt-5" aria-label="Paginación del catálogo">
+            <a href="#pagina-1" class="btn btn-outline-primary btn-sm rounded-circle" aria-label="Página anterior">&laquo;</a>
+            <a href="#pagina-1" class="btn btn-outline-primary btn-sm rounded-circle">1</a>
+            <a href="#pagina-2" class="btn btn-primary btn-sm rounded-circle" aria-current="page">2</a>
+            <a href="#pagina-3" class="btn btn-outline-primary btn-sm rounded-circle">3</a>
+            <a href="#pagina-3" class="btn btn-outline-primary btn-sm rounded-circle" aria-label="Página siguiente">&raquo;</a>
+          </nav>
+          </div>
+
+          <div class="pagina-prod" id="pagina-3">
+<div class="grupo-productos"><i class="bi bi-basket3"></i><div><h2>Despensa Saludable</h2><p>Cereales, harinas, cremas, dátiles y endulzantes naturales.</p></div></div>
+
+          <section id="cat-despensa" class="categoria mb-5">
+            <h2 class="h4 mb-4">Despensa <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">13</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/purpose-mezcla-pancakes.jpg" class="card-img-top" alt="Mezcla para Pancakes y Waffles Purpose Brands">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Purpose Brands</span>
+                  <h3 class="h6"><a href="detalle.html#purpose-mezcla-pancakes" class="stretched-link text-reset text-decoration-none">Mezcla para Pancakes &amp; Waffles</a></h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$32.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Purpose%20Brands%20Mezcla%20para%20Pancakes%20%26%20Waffles%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="col">
               <div class="card card-producto h-100">
-                <img src="img/porcion-torta-chocolate.jpg" class="card-img-top" alt="Porción de Torta de Chocolate">
+                <img src="img/paranice-pancakes-waffles-x3.jpg" class="card-img-top" alt="Pancakes y Waffles a base de Avena Paranice">
                 <div class="card-body d-flex flex-column">
-                  <span class="marca-producto">Sorbetto</span>
-                  <h3 class="h6">Porción de Torta de Chocolate</h3>
-                  <span class="text-muted small">1 porción</span>
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6"><a href="detalle.html#paranice-pancakes-waffles-x3" class="stretched-link text-reset text-decoration-none">Pancakes &amp; Waffles a base de Avena</a></h3>
+                  <span class="text-muted small">300g</span>
                   <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
-                    <span class="precio">-</span>
-                    <button class="btn btn-primary btn-sm" type="button">Añadir +</button>
+                    <span class="precio">$34.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Paranice%20Pancakes%20%26%20Waffles%20a%20base%20de%20Avena%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
                   </div>
                 </div>
               </div>
             </div>
 
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-avena-hojuelas.jpg" class="card-img-top" alt="Avena en Hojuelas Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6"><a href="detalle.html#paranice-avena-hojuelas" class="stretched-link text-reset text-decoration-none">Avena en Hojuelas</a></h3>
+                  <span class="text-muted small">1kg</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$30.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Paranice%20Avena%20en%20Hojuelas%20%281kg%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          </div>
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-harina-avena.jpg" class="card-img-top" alt="Harina de Avena Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6"><a href="detalle.html#paranice-harina-avena" class="stretched-link text-reset text-decoration-none">Harina de Avena</a></h3>
+                  <span class="text-muted small">1kg</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$30.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Paranice%20Harina%20de%20Avena%20%281kg%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-granola-chocolate.jpg" class="card-img-top" alt="GranOla Chocolate Chip Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6"><a href="detalle.html#paranice-granola-chocolate" class="stretched-link text-reset text-decoration-none">GranOla Chocolate Chip</a></h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$36.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Paranice%20GranOla%20Chocolate%20Chip%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/selectum-cereal-quinua-chocolate.jpg" class="card-img-top" alt="Cereal de Quinua con Amaranto y Mijo sabor Chocolate Selectum">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Selectum</span>
+                  <h3 class="h6"><a href="detalle.html#selectum-cereal-quinua-chocolate" class="stretched-link text-reset text-decoration-none">Cereal de Quinua con Amaranto y Mijo - Chocolate</a></h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$28.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Selectum%20Cereal%20de%20Quinua%20con%20Amaranto%20y%20Mijo%20-%20Chocolate%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/selectum-cereal-quinua-miel-arandanos.jpg" class="card-img-top" alt="Cereal de Quinua con Amaranto y Mijo sabor Miel y Arándanos Selectum">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Selectum</span>
+                  <h3 class="h6"><a href="detalle.html#selectum-cereal-quinua-miel-arandanos" class="stretched-link text-reset text-decoration-none">Cereal de Quinua con Amaranto y Mijo - Miel y Arándanos</a></h3>
+                  <span class="text-muted small">300g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$28.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Selectum%20Cereal%20de%20Quinua%20con%20Amaranto%20y%20Mijo%20-%20Miel%20y%20Ar%C3%A1ndanos%20%28300g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/seri-mermelada-fresa.jpg" class="card-img-top" alt="Mermelada de Fresa Sin Azúcar Añadida Seri Foods">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Seri Foods</span>
+                  <h3 class="h6"><a href="detalle.html#seri-mermelada-fresa" class="stretched-link text-reset text-decoration-none">Mermelada de Fresa Sin Azúcar Añadida</a></h3>
+                  <span class="text-muted small">250g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$16.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Seri%20Foods%20Mermelada%20de%20Fresa%20Sin%20Az%C3%BAcar%20A%C3%B1adida%20%28250g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/quinoaclub-quinua-arepa.jpg" class="card-img-top" alt="Quinua Arepa QuinoaClub">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">QuinoaClub</span>
+                  <h3 class="h6"><a href="detalle.html#quinoaclub-quinua-arepa" class="stretched-link text-reset text-decoration-none">Quinua Arepa</a></h3>
+                  <span class="text-muted small">400g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$17.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20QuinoaClub%20Quinua%20Arepa%20%28400g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/paranice-crema-cacao-avellanas.jpg" class="card-img-top" alt="Crema de Cacao y Avellanas Paranice">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Paranice</span>
+                  <h3 class="h6"><a href="detalle.html#paranice-crema-cacao-avellanas" class="stretched-link text-reset text-decoration-none">Crema de Cacao y Avellanas</a></h3>
+                  <span class="text-muted small">284g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$46.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Paranice%20Crema%20de%20Cacao%20y%20Avellanas%20%28284g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+
+          <section id="cat-datiles" class="categoria mb-5">
+            <h2 class="h4 mb-4">Dátiles &amp; Frutos Secos <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">1</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/walla-habibi-dates.jpg" class="card-img-top" alt="Dátil Deglet Nour Sin Semilla Yalla Habibi">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Yalla Habibi</span>
+                  <h3 class="h6"><a href="detalle.html#walla-habibi-dates" class="stretched-link text-reset text-decoration-none">Dátil Deglet Nour Sin Semilla</a></h3>
+                  <span class="text-muted small">200g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$20.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Yalla%20Habibi%20D%C3%A1til%20Deglet%20Nour%20Sin%20Semilla%20%28200g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </section>
+
+          <section id="cat-siropes" class="categoria mb-5">
+            <h2 class="h4 mb-4">Siropes &amp; Endulzantes <span class="badge rounded-pill bg-verde-suave text-verde border border-success-subtle fs-6 ms-1">1</span></h2>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card-producto h-100">
+                <img src="img/date-syrup-natural.jpg" class="card-img-top" alt="Date Syrup Natural Al Barakah Dates">
+                <div class="card-body d-flex flex-column">
+                  <span class="marca-producto">Al Barakah Dates</span>
+                  <h3 class="h6"><a href="detalle.html#date-syrup-natural" class="stretched-link text-reset text-decoration-none">Date Syrup Natural</a></h3>
+                  <span class="text-muted small">250g</span>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                    <span class="precio">$23.000</span>
+                    <a href="https://wa.me/573042236264?text=Hola%20Healthy%20Box%2C%20quiero%20adquirir%3A%20Al%20Barakah%20Dates%20Date%20Syrup%20Natural%20%28250g%29" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Adquirir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </section>
 
           <nav class="d-flex justify-content-center gap-2 mt-5" aria-label="Paginación del catálogo">
-            <a href="#" class="btn btn-outline-primary btn-sm rounded-circle" aria-current="page">1</a>
+            <a href="#pagina-2" class="btn btn-outline-primary btn-sm rounded-circle" aria-label="Página anterior">&laquo;</a>
+            <a href="#pagina-1" class="btn btn-outline-primary btn-sm rounded-circle">1</a>
+            <a href="#pagina-2" class="btn btn-outline-primary btn-sm rounded-circle">2</a>
+            <a href="#pagina-3" class="btn btn-primary btn-sm rounded-circle" aria-current="page">3</a>
           </nav>
+          </div>
+
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="pie-azul pt-5 pb-3">
+    <footer class="pie-azul pt-5 pb-3">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-5">
-          <img src="img/logo-icono.png" alt="Healthy Box" height="40" class="mb-3">
+          <img src="img/logo-icono.png" alt="Healthy Box" height="40" class="mb-3" style="filter:brightness(0) invert(1);">
           <p class="small">Curamos y seleccionamos los mejores snacks saludables de las marcas más conscientes del mercado. Sabor y bienestar en una sola caja.</p>
           <div class="redes d-flex gap-2">
-            <a href="#" aria-label="Instagram @healthybox_sahagun"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="#" aria-label="Chat / WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+            <a href="https://www.instagram.com/licethlp07?knvt=MXJ4OGp3YTh5czN5NA==" aria-label="Instagram @healthybox_sahagun"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="https://wa.me/573042236264" target="_blank" rel="noopener" aria-label="Chat / WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
           </div>
         </div>
         <div class="col-6 col-lg-3">
           <h6>ENLACES</h6>
           <ul class="list-unstyled d-grid gap-2 small">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="nosotros.html">Quiénes Somos</a></li>
             <li><a href="productos.html">Productos</a></li>
-            <li><a href="detalle.html">Detalles</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -678,8 +803,8 @@
           <h6>CONTACTO</h6>
           <ul class="list-unstyled d-grid gap-2 small">
             <li><i class="bi bi-geo-alt-fill me-1"></i> Cr 9 #17 Sahagún, Córdoba, Colombia</li>
-            <li><i class="bi bi-telephone-fill me-1"></i> +57 301 488 2810</li>
-            <li><i class="bi bi-envelope-fill me-1"></i> boxhealthy821@gmail.com</li>
+            <li><i class="bi bi-telephone-fill me-1"></i> +57 304 223 6264</li>
+            <li><i class="bi bi-envelope-fill me-1"></i> liclpz1720@gmail.com</li>
           </ul>
         </div>
       </div>
@@ -690,7 +815,7 @@
     </div>
   </footer>
 
-  <a href="#" class="boton-flotante boton-flotante--wa" aria-label="Escríbenos por WhatsApp">
+  <a href="https://wa.me/573042236264" target="_blank" rel="noopener" class="boton-flotante boton-flotante--wa" aria-label="Escríbenos por WhatsApp">
     <i class="bi bi-whatsapp fs-4"></i>
   </a>
   <a href="#" class="boton-flotante boton-flotante--arriba" aria-label="Volver arriba">
@@ -698,5 +823,6 @@
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
